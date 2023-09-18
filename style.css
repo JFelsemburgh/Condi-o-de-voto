@@ -1,0 +1,13 @@
+@charset "UFT-8";
+
+Body{
+    background-color: black;
+    color: white;
+   text-align: center;
+   font-size: 18px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#idade {
+    width:  40px;
+}

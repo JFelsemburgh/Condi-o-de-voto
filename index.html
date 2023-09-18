@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade para votar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Condição de votos</h1>
+   Insira a sua idade: <input type="number" name="idade" id="idade">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id = "validar"></div>
+    
+
+    <script>
+        
+       
+        function verificar() {
+            var idade = document.getElementById('idade');
+            var validar = document.getElementById('validar');
+           
+            
+            if (idade.value < 16) {
+    validar.innerText = 'Não vota';
+}
+            else if (idade.value < 18 || idade.value > 65) {
+    validar.innerText = 'Voto opcional';
+}
+            else {
+    validar.innerText = 'Voto obrigatório';
+}
+        }
+        
+
+    </script>
+
+    
+</body>
+</html>
